@@ -15,6 +15,7 @@
 		997EAF1722D86AB60076FDCF /* temp-list-data-generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997EAF1622D86AB60076FDCF /* temp-list-data-generator.swift */; };
 		997EAF1922D86C050076FDCF /* TopBarA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997EAF1822D86C050076FDCF /* TopBarA.swift */; };
 		997EAF1C22D86E770076FDCF /* M42DirectionProgressScrollConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997EAF1B22D86E770076FDCF /* M42DirectionProgressScrollConverter.swift */; };
+		997EAF2222D87D400076FDCF /* M4ProgressColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997EAF2122D87D400076FDCF /* M4ProgressColorHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		997EAF1622D86AB60076FDCF /* temp-list-data-generator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "temp-list-data-generator.swift"; sourceTree = "<group>"; };
 		997EAF1822D86C050076FDCF /* TopBarA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarA.swift; sourceTree = "<group>"; };
 		997EAF1B22D86E770076FDCF /* M42DirectionProgressScrollConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M42DirectionProgressScrollConverter.swift; sourceTree = "<group>"; };
+		997EAF2122D87D400076FDCF /* M4ProgressColorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M4ProgressColorHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				997EAF0522D869DB0076FDCF /* ViewController.swift */,
 				997EAF1822D86C050076FDCF /* TopBarA.swift */,
 				997EAF1A22D86DD30076FDCF /* double-direction-progress */,
+				997EAF2022D87D290076FDCF /* progress-color */,
 				997EAF0722D869DB0076FDCF /* Main.storyboard */,
 				997EAF0A22D869DE0076FDCF /* Assets.xcassets */,
 				997EAF0C22D869DE0076FDCF /* LaunchScreen.storyboard */,
@@ -87,6 +90,14 @@
 				997EAF1B22D86E770076FDCF /* M42DirectionProgressScrollConverter.swift */,
 			);
 			path = "double-direction-progress";
+			sourceTree = "<group>";
+		};
+		997EAF2022D87D290076FDCF /* progress-color */ = {
+			isa = PBXGroup;
+			children = (
+				997EAF2122D87D400076FDCF /* M4ProgressColorHelper.swift */,
+			);
+			path = "progress-color";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +176,7 @@
 				997EAF1922D86C050076FDCF /* TopBarA.swift in Sources */,
 				997EAF0422D869DB0076FDCF /* AppDelegate.swift in Sources */,
 				997EAF1722D86AB60076FDCF /* temp-list-data-generator.swift in Sources */,
+				997EAF2222D87D400076FDCF /* M4ProgressColorHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

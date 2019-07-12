@@ -32,6 +32,22 @@ class ViewController: UIViewController {
         return topBarA
     }()
     
+    private lazy var titleProgressColorHelper: M4ProgressColorHelper = {
+        let colorHelper = M4ProgressColorHelper()
+        colorHelper.progress0Color = .black
+        colorHelper.progress1Color = .red
+        
+        return colorHelper
+    }()
+    
+    private lazy var bgProgressColorHelper: M4ProgressColorHelper = {
+        let colorHelper = M4ProgressColorHelper()
+        colorHelper.progress0Color = .clear
+        colorHelper.progress1Color = .white
+        
+        return colorHelper
+    }()
+    
     private lazy var scrollConverter : M42DirectionProgressScrollConverter = {
         let scrollConverter = M42DirectionProgressScrollConverter()
         scrollConverter.progress0OffsetX = 0
@@ -83,6 +99,12 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if let progress = scrollConverter.scrollUpProgress(scrollView) {
             topBarA.scrollUp(progress)
+            if let color = titleProgressColorHelper.color(progress) {
+                topBarA.label.textColor = color
+            }
+            if let color = bgProgressColorHelper.color(progress) {
+                topBarA.backgroundColor = color
+            }
         }
         if let progress = scrollConverter.scrollDownProgress(scrollView) {
             topBarA.scrollDown(progress)
